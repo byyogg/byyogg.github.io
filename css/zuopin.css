@@ -1,0 +1,51 @@
+body{
+	min-width: 400px;
+}
+
+/* banner */
+section{
+	width:100%;
+	padding-left:0%;
+	box-sizing: border-box;
+}
+section .banner img{
+	display: block;
+	width:100%;
+}
+section .banner img.min-show{
+	display: none;
+}
+
+.menu-box header{
+	display: flex;
+	justify-content: space-between;
+}
+.menu-box header .close{
+	display: block;
+	width:40px;
+	height:40px;
+	border:none;
+	background:none;
+	cursor: pointer;
+}
+
+main .enter .login::before{
+	content:'';
+	display: inline-block;
+	width:28px;
+	height:17px;
+	background: url(https://www.starbucks.com.cn/assets/icons/icon-account.svg) no-repeat left center;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+footer {
+	box-sizing: border-box;
+	padding: 0 0 0 80px;
+	margin-top: 20px;
+}
+footer a{
+	color: #8C8C8C;
+}
+footer a:hover{
+	color: #333;
+}

@@ -1,0 +1,545 @@
+body{
+	min-width: 400px;
+}
+/* 页面左边 */
+aside{
+	width: 30%;
+	height: 100%;
+	background-color: #fff;
+	position: fixed;
+	left: 0;
+	top: 0;
+	box-shadow: 0 1px 2px 1px rgb(0 0 0 / 10%);
+}
+aside header{
+	display: flex;
+	align-items: center;
+	padding: 25px;
+	position: relative;
+}
+.logo{
+	width: 48px;
+}
+aside .logo img{
+	display: block;
+	width: 100%;
+}
+aside header ul{
+	display: flex;
+}
+aside header ul li{
+	padding: 0 20px;
+}
+aside header ul a{
+	color: #333;
+	font-weight: 700;
+}
+
+aside .menu{
+	position: absolute;
+	right:24px;
+	top:50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+aside .menu i{
+	display: block;
+	width:24px;
+	height:3px;
+	border-radius: 5px;
+	background-color: #ccc;
+}
+aside .menu i:not(:last-child){
+	margin-bottom: 5px;
+}
+aside .account{
+	display: flex;
+	align-items: center;
+	height:calc(100% - 48px);
+	background-color: #fff;
+	padding:0 30px 0 80px;
+	font-size: 26px;
+}
+.center p{
+	font-weight: 700;
+}
+.enter{
+	display: flex;
+	margin-top: 50px;
+}
+aside .account a{
+	width: calc((100% -20px )/3);
+	color: #00A862;
+	font-size: 18px;
+}
+.resigter{
+	display: block;
+	height: 31px;
+	line-height: 31px;
+	text-align: center;
+	border: 1px solid #00A862;
+	border-radius: 50px;
+}
+aside .account .login::before
+{
+	content:'';
+	display: inline-block;
+	width:28px;
+	height:17px;
+	background: url(https://www.starbucks.com.cn/assets/icons/icon-account.svg) no-repeat left center;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+/* banner */
+section{
+	width:100%;
+	padding-left: 30%;
+	box-sizing: border-box;
+}
+section .banner img{
+	display: block;
+	width:100%;
+}
+section .banner img.min-show{
+	display: none;
+}
+
+/* menu菜单 */
+.menu-box{
+	display: none;
+	position: fixed;
+	left:0;
+	top:0;
+	width:30%;
+	height:100%;
+	padding: 24px;
+	box-sizing: border-box;
+	background-color: #fff;
+	opacity: 0;
+	z-index: 9;
+	overflow-y: auto;
+}
+.menu-box header{
+	display: flex;
+	justify-content: space-between;
+}
+.menu-box header .close{
+	display: block;
+	width:40px;
+	height:40px;
+	border:none;
+	background:none;
+	cursor: pointer;
+}
+.show-menu{
+	display: block;
+	opacity: 1;
+}
+.list{
+	margin-left: 80px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.list li{
+	margin-top: 20px;
+}
+.list li a{
+	font-size: 18px;
+	font-weight: 700;
+	color: #333;
+}
+main .enter{
+	margin-top: 20px;
+	padding: 0 0 0 80px;
+	box-sizing: border-box;
+}
+.enter a{
+	width: calc((100% -20px )/3);
+	color: #00A862;
+	font-size: 18px;
+}
+main .enter .login::before{
+	content:'';
+	display: inline-block;
+	width:28px;
+	height:17px;
+	background: url(https://www.starbucks.com.cn/assets/icons/icon-account.svg) no-repeat left center;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+footer {
+	box-sizing: border-box;
+	padding: 0 0 0 80px;
+	margin-top: 20px;
+}
+footer a{
+	color: #8C8C8C;
+}
+footer a:hover{
+	color: #333;
+}
+/* 小屏导航 */
+.min-nav{
+	display: none;
+	position: fixed;
+	left:0;
+	bottom:0;
+	width: 100%;
+	border-top:1px solid #ccc;
+	background-color: #fff;
+	padding: 10px 0;
+	z-index: 5;
+}
+.min-nav ul{
+	display: flex;
+}
+.min-nav ul li a{
+	display: flex;
+	font-size: 12px;
+	flex-direction: column;
+	color: #333;
+}
+.min-nav ul li{
+	width:20%;
+	text-align: center;
+}
+/* banner下面图片 */
+.three-img{
+	width: 100%;
+	background-color: #f7f7f7;
+	padding-left: 30%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	box-sizing: border-box;
+}
+.three-img ul{
+	display: flex;
+	padding: 0 20px ;
+	box-sizing: border-box;
+}
+.three-img li{
+	width: calc((100% - 20px )/3);
+	margin-left: 20px;
+}
+.three-img li:first-child{
+	margin-left: 0;
+}
+.three-img li:hover img{
+	transform: translateY(-5px);
+	box-shadow: 0 1px 5px 1px rgb(0 0 0 / 20%);
+}
+.three-img img{
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: 0 1px 1px 1px rgb(0 0 0 / 12%);
+	transition: all 0.2s;
+}
+/* 星享俱乐部 */
+.club{
+	width: 100%;
+	padding-left: 30%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	box-sizing: border-box;
+}
+.club-content{
+	max-width: 768px;
+	box-sizing: border-box;
+	padding: 0 20px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.club-content div{
+	width: calc(100% / 2);
+}
+.club-left{
+	
+}
+.club-left h4{
+	font-size: 25px;
+	font-weight: 400;
+}
+.club-left p{
+	color: #333;
+	font-weight: 100;
+	line-height: 35px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.club-left p a{
+	color: #C2A661;
+}
+.le-a{
+	display: flex;
+}
+.le-a a{
+	display: block;
+	width: 70px;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #00A862;
+	border-radius: 50px;
+	color: #00A862;
+	text-align: center;
+	margin-left: 10px;
+}
+.le-a a:first-child{
+	margin-left: 0;
+}
+.club-right{
+	margin-left: 10%;
+}
+.club-right img{
+	display: block;
+	margin: 0 auto;
+}
+/* 星巴克精选 */
+.sift{
+	width: 100%;
+	padding-left: 30%;
+	padding-top: 40px;
+	padding-bottom: 30px;
+	box-sizing: border-box;
+	background-color: #f7f7f7;
+}
+.sift-content{
+	padding: 0 30px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+.sift-content h4{
+	text-align: center;
+	font-size: 22px;
+	font-weight: 400;
+}
+.sift-content .p{
+	text-align: center;
+	font-weight: 200;
+	margin-top: 30px;
+}
+.sift-content ul{
+	display: flex;
+	max-width: 730px;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
+.sift-content li{
+	width: calc((100% - 60px)/ 4);
+	background-color: white;
+	padding:50px 0px 20px 0px ;
+	margin-left: 20px;
+	position: relative;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 0 1px 1px 1px rgb(0 0 0 / 12%);
+	transition: all 0.2s;
+}
+.sift-content li:hover{
+	transform: translateY(-5px);
+	box-shadow: 0 1px 3px 1px rgb(0 0 0 / 20%);
+}
+.sift-content li:first-child{
+	margin-left: 0;
+}
+.sift-content li img{
+	width: 100px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: -20%;
+}
+.sift-content li h5{
+	font-size: 16px;
+	font-weight: 600;
+	color: #000000;
+	margin-bottom: 20px;
+}
+.sift-content li p{
+	font-size: 14px;
+	font-weight: 200;
+	color: #333;
+	line-height: 25px;
+}
+.sift-content li span{
+	display: block;
+	font-size: 12px;
+	color: #C2A661;
+	margin-top: 10px;
+}
+.sift-content li:hover span{
+	color: #dfb73e;
+}
+
+@media screen and (max-width:1130px){
+	aside{
+		position: relative;
+		width:100%;
+		height:auto;
+	}
+	aside .account{
+		padding:0 30px 0 30px;
+	}
+	.enter{
+		margin: 20px;
+	}
+	section{
+		padding-left: 0;
+	}
+	.menu-box{
+		width:100%;
+	}
+	.three-img{
+		padding-left: 0%;
+	}
+	
+	.club{
+		padding-left: 0%;
+	}
+	
+	.sift{
+		padding-left: 0%;
+	}
+}
+
+
+@media screen and (max-width:640px) {
+	aside header{
+		display: none;
+	}
+	aside .account{
+		padding-left:24px ;
+	}
+	aside .account .enter{
+		display: none;
+	}
+	.center p{
+		line-height: 80px;
+	}
+	section .banner img.min-show{
+		display: block;
+	}
+	section .banner img.max-show{
+		display: none ;
+	}
+	.min-nav{
+		display: block;
+	}
+	.list{
+		margin-left: 10px;
+	}
+	main .enter{
+		padding: 0px;
+	}
+	footer{
+		padding: 10px;
+	}
+	.three-img ul{
+		display: flex;
+		flex-direction: column;
+	}
+	.three-img li{
+		width: calc(100%);
+		margin-left: 0px;
+		margin-top: 20px;
+	}
+	.three-img li:first-child{
+		margin-left: 0;
+		margin-top: 0px;
+	}
+	.three-img li:hover img{
+		transform: translateY(0px);
+	}
+	
+	.club{
+		width: 100%;
+		
+		padding-top: 30px;
+		padding-bottom: 30px;
+		box-sizing: border-box;
+	}
+	.club-content{
+		max-width: 768px;
+		box-sizing: border-box;
+		padding: 0 20px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.club-content div{
+		width: calc(100%);
+	}
+	.club-left{
+		text-align: center;
+	}
+	.club-left h4{
+		font-size: 25px;
+		font-weight: 400;
+	}
+	.club-left p{
+		color: #333;
+		font-weight: 100;
+		line-height: 35px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.club-left p a{
+		color: #C2A661;
+	}
+	.le-a{
+		display: flex;
+		justify-content: center;
+	}
+	.le-a a{
+		display: block;
+		width: 70px;
+		height: 40px;
+		line-height: 40px;
+		border: 1px solid #00A862;
+		border-radius: 50px;
+		color: #00A862;
+		text-align: center;
+		margin-left: 10px;
+	}
+	.le-a a:first-child{
+		margin-left: 0;
+	}
+	.club-right{
+		margin-left: 0;
+		margin-top: 20px;
+	}
+	.club-right img{
+		display: block;
+		margin: 0 auto;
+	}
+	
+	.sift-content ul{
+		flex-wrap: wrap;
+	}
+	.sift-content li{
+		width: calc((100% - 60px)/ 2);
+		margin-left: 20px;
+	}
+	.sift-content li:nth-child(3n),
+	.sift-content li:last-child{
+		margin-top: 70px;
+	}
+	.sift-content li:nth-child(3n),
+	.sift-content li:first-child{
+		margin-left: 0;
+	}
+	.sift-content li:hover{
+		transform: translateY(0px);
+		box-shadow: 0 1px 3px 1px rgb(0 0 0 / 20%);
+	}
+	.sift-content{
+		padding: 0px;
+	}
+	.sift{
+		padding-bottom: 100px;
+	}
+}
